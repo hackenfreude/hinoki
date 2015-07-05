@@ -3,7 +3,8 @@
   :license {:name "The MIT License"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [ring/ring-core "1.3.2"]
-                 [ring/ring-jetty-adapter "1.3.2"]]
+                 [ring/ring-jetty-adapter "1.3.2"]
+                 [clj-http "1.1.2"]]
   :profiles {:dev {:dependencies [[midje "1.6.3"]]}}
   :plugins [[lein-midje "3.1.3"]]
   :test-paths ["test"])
