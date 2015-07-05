@@ -2,11 +2,8 @@
   (:require [clj-http.client :as client]
             [ring.util.response :use get-header]))
 
-(defn get-specific-header [request header]
-  (get-header request header))
-
 (defn get-correlations [request]
-  (hash-map :trace (get-specific-header request "trace") :span (get-specific-header request "span") :parent (get-specific-header request "parent")))
+  (hash-map :trace (get-header request "trace") :span (get-header request "span") :parent (get-header request "parent")))
 
 (defn first-handler [request]
   {:status 200
