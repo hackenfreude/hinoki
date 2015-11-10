@@ -5,7 +5,8 @@
                  [ring/ring-core "1.3.2"]
                  [ring/ring-jetty-adapter "1.3.2"]
                  [clj-http "1.1.2"]
-                 [danlentz/clj-uuid "0.1.6"]]
+                 [danlentz/clj-uuid "0.1.6"]
+                 [clj-time "0.10.0"]]
   :profiles {:dev {:dependencies [[midje "1.6.3"]]}}
   :plugins [[lein-midje "3.1.3"]]
   :test-paths ["test"])
